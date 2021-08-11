@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title></title>
+  <title>Dushifood</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
-	<h1>Hello World!</h1>
+
+
+  <header class="header-sticky header-main">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Help</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link log-in-btn" href="#">Log in</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link sing-up-btn" href="#">Sign Up</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Header End Here --> 
+
+
+
+  <div class="slider-section">
+    <div class="slide-inner">
+      <div class="container h-100">
+        <div class="col-sm-6 h-100">
+          <div class="country-selector">
+            <div class="country-box"><object data="https://d2guulkeunn7d8.cloudfront.net/assets/growth/landing/locations_page/us_flag-ba87db09d555f6ca56f88b49567659e9fcd51d5083d312e1040464ab996900c1.svg" aria-label="United States" type="image/svg+xml" class="country-names">United States</object>
+              <select data-testid="country_chooser" name="country_alpha_2" class="country-slct">
+              <option value="US" aria-label="United States">US</option>
+              <option value="CA" aria-label="Canada">UK</option>
+              <option value="CA" aria-label="Canada">DA</option>
+              <option value="CA" aria-label="Canada">CA</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="slide-content h-100">
+          <h3>Order groceries for delivery<br> or pickup today</h3>
+          <p>Whatever you want from local stores, brought right to your door.</p>
+
+          <div class="location-sbar mt-4">
+            <!-- Actual search box -->
+            <div class="form-group has-search">
+              <span class="fas fa-map-marker-alt icons"></span>
+              <input type="text" class="form-control my-cls" placeholder="Enter Your Addreess">
+              <span class="fa fa-arrow-right icons"></span>
+            </div>
+           <div class="current-lbox" style="display:none;"><button class="btn"><i class="fas fa-location-arrow"></i>Use current location</button></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- slider-section End Here -->
+
+
+
+
+  <div class="section-two">
+      <div class="container h-100">
+        <div class="col-sm-12">
+          <h2 class="text-center">Grocery delivery you can count on</h2>
+    </div>
+  </div>
+</div>
+<!-- slider-section End Here -->
+
+
+<script type="text/javascript">
+
+  $(".my-cls").focus(function(){
+       $('.current-lbox').show();
+
+  }).blur(function(){
+      $('.current-lbox').hide();
+  })
+</script>
+
 
 </body>
 </html>

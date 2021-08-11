@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.logo {
+    width: 170px;
+    padding-right: 24px;
+}
+header.header-main {
+    background-color: #fff;
+}
+.navbar-nav a {
+    padding: 10px 15px !important;
+    line-height: 1.6;
+}
+a.nav-link.sing-up-btn {
+    background-color: #a30000;
+    border-radius: 38px;
+    padding: 10px 25px !important;
+    color: #fff !important;
+}
+.slider-section {
+    width: 100%;
+    min-height: 460px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.slide-inner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-position: right center;
+    background-image: url("../images/slide-1.jpg");
+    background-color: rgb(222, 237, 214);
+}
+.slide-content {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+.slide-content h3 {
+    font-size: 41px;
+    line-height: 52px;
+    font-weight: 600;
+    color: rgb(52, 53, 56);
+    margin: 0px;
+}
+.slide-content p {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: normal;
+    margin: 16px 0px 0px;
+}
+.country-names {
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+}
+.country-selector {
+    position: absolute;
+    top: 60px;
+    z-index: 999;
+}
+.country-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid rgb(199, 200, 205);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.country-slct {
+    background-image: url("https://d2guulkeunn7d8.cloudfront.net/assets/homepage/country-chooser-arrow-0a7eab6d692d69c95f6e81f06eca541be78ab5ef452ff14bd2bc1a7d1a9481c9.svg");
+    appearance: none;
+    border: none;
+    width: 8px;
+    height: 5px;
+    text-indent: 8px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 8px;
+}
+.location-sbar .has-search .icons {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #1b1b1b;
+}
+.location-sbar .has-search .form-control {
+    padding-left: 2.375rem;
+}
+.location-sbar {
+    width: 432px;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+.location-sbar .form-group {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.location-sbar .fa-arrow-right.icons {
+    right: 0;
+    top: auto;
+}
+.location-sbar .has-search .form-control {
+    padding: 15px 32px;
+    height: 56px;
+    border-radius: 12px;
+}
+.current-lbox {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px;
+    position: absolute;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 12px;
+    width: 432px;
+    z-index: 1;
+    bottom: -50px;
+    transition: .2s;
+}
+.current-lbox .fa-location-arrow {
+    padding-right: 15px;
+    color: #a30000;
+}
+.current-lbox .btn {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: inherit;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+@media (min-width: 768px){ 
+nav.navbar.navbar-expand-lg {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.logo {
+    border-right: 1px solid #E8E9EB;
+}
+}
+@media (max-width: 767px){ 
+.slide-content h3 {
+    font-size: 22px;
+    line-height: 28px;
+}
+}
