@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Dushifood</title>
+  <title>Dushicart</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/custom-style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="images/fav-ico.png" rel="icon" type="image/png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link as="font" crossorigin="anonymous" href="fonts/eina-regular-962b94746f466cf38b0dcc93ebf0703e.woff2" rel="preload" type="font/woff2" />
+  <link as="font" crossorigin="anonymous" href="fonts/eina-semibold-3c45702adeba381bbd0bc600c987febd.woff2" rel="preload" type="font/woff2" />
+  <link as="font" crossorigin="anonymous" href="fonts/eina-bold-df33d802f345a9037eb82e0c80e76547.woff2" rel="preload" type="font/woff2" />
+   
 </head>
 <body>
 
@@ -18,7 +20,7 @@
   <header class="header-sticky header-main">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid logo"></a>
+        <a class="navbar-brand" href="#"><img src="images/dushicart-logo-N.png" class="img-fluid logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,9 +58,9 @@
   <div class="slider-section">
     <div class="slide-inner">
       <div class="container h-100">
-        <div class="col-sm-6 h-100">
+        <div class="col-sm-7 h-100">
           <div class="country-selector">
-            <div class="country-box"><object data="https://d2guulkeunn7d8.cloudfront.net/assets/growth/landing/locations_page/us_flag-ba87db09d555f6ca56f88b49567659e9fcd51d5083d312e1040464ab996900c1.svg" aria-label="United States" type="image/svg+xml" class="country-names">United States</object>
+            <div class="country-box"><object data="images/us_flag.svg" aria-label="United States" type="image/svg+xml" class="country-names">United States</object>
               <select data-testid="country_chooser" name="country_alpha_2" class="country-slct">
                 <option value="US" aria-label="United States">US</option>
                 <option value="CA" aria-label="Canada">UK</option>
@@ -184,55 +186,373 @@
     </div>
 
     <div class="row speciality-boxes mt-3">
-      <div class="col-sm-3">
+      <div class="col-md-3 col-sm-6">
         <div class="speciality-txt-box">
-        <h3>500 million product</h3>
-        <p>available to shop across the catalog</p>
-       </div>
+          <h3>500 million product</h3>
+          <p>available to shop across the catalog</p>
+        </div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-md-3 col-sm-6">
         <div class="speciality-txt-box">
-        <h3>40,000<br> stores</h3>
-        <p>from local grocers to chain stores</p>
-       </div>
+          <h3>40,000<br> stores</h3>
+          <p>from local grocers to chain stores</p>
+        </div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-md-3 col-sm-6">
         <div class="speciality-txt-box">
-        <h3>5,500+ <br>cities</h3>
-        <p>served across the U.S. & Canada</p>
-       </div>
+          <h3>5,500+ <br>cities</h3>
+          <p>served across the U.S. & Canada</p>
+        </div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-md-3 col-sm-6">
         <div class="speciality-txt-box">
-        <h3>Millions of orders</h3>
-        <p>delivered or picked up yearly</p>
-       </div>
+          <h3>Millions of orders</h3>
+          <p>delivered or picked up yearly</p>
+        </div>
       </div>
-
 
     </div>   
   </div>
 </div>
-  <!-- about section End Here -->
+<!-- about section End Here -->
 
 
-  <script type="text/javascript">
+<div class="faq-section mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Common questions</h2>
+        <div class="faq-accordion" id="faq-accordion">
+          <div class="card">
+            <div class="card-header" id="faq-accordion-1">
+              <h2 class="mb-0">
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">How does Instacart delivery and curbside pickup work?<i class="fa fa-plus"></i></button>                  
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faq-accordion-1">
+              <div class="card-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faq-accordion-2">
+              <h2 class="mb-0">
+                <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">How much does Instacart cost?<i class="fa fa-plus"></i></button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq-accordion-2">
+              <div class="card-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faq-accordion-3">
+              <h2 class="mb-0">
+                <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"> What happens if there’s an issue with my order? <i class="fa fa-plus"></i></button>                     
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-accordion-3">
+              <div class="card-body">
+                <p>If something isn’t right, you’ve got options. In the Instacart app or website, you can report:<br>
 
-    $(".my-cls").focus(function(){
-     $('.current-lbox').show();
+                  - Missing items<br>
+                  - Incorrect items<br>
+                  - Damaged items<br>
+                  - Poor replacements<br>
+                  - Early/late orders<br>
+                If an order never came, or you get someone else’s order, you can reach out to Instacart Care.</p>
+              </div>
+            </div>
+          </div>
 
-   }).blur(function(){
-    $('.current-lbox').hide();
-  })
+          <div class="card">
+            <div class="card-header" id="faq-accordion-4">
+              <h2 class="mb-0">
+                <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">Can I get contactless delivery with Instacart?<i class="fa fa-plus"></i></button>                     
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-accordion-4">
+              <div class="card-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="faq-accordion-5">
+              <h2 class="mb-0">
+                <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">What happens if there’s an issue with my order? <i class="fa fa-plus"></i></button>                     
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-accordion-5">
+              <div class="card-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>   
+  </div>
+</div>
+<!-- faq section End Here -->
+
+
+<footer class="footer-main mt-4">
+  <div class="container">
+   <div class="row">
+     <div class="col-sm-12">    
+       <div class="common-footer top-ftr">
+         <div class="shopers-left-bx">
+          <div class="shopers-left-inner">
+           <p class="get-deliver-para"><img src="images/fav-ico.png" class="img-fluid"><strong>Get deliveries with Dushicart</strong></p>
+           <ul>
+            <li><a href=""><i class="fab fa-apple"></i> IOS</a></li>
+            <li><a href=""><i class="fab fa-google-play"></i> Android</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="shopers-right-bx">
+       <div class="footer-links-bx">
+        <h3>Top departments</h3>
+        <button aria-expanded="false" class="mob-tbtn"><h3>Top departments</h3><i class="fas fa-chevron-down"></i></button>
+        <div class="links-box">
+        <ul>
+          <li><a href="">Fresh Produce</a></li>
+          <li><a href="">Dairy Products</a></li>
+          <li><a href="">Meat</a></li>
+          <li><a href="">Meat Alternatives</a></li>
+          <li><a href="">Seafood</a></li>
+          <li><a href="">Pantry Food</a></li>
+          <li><a href="">Baked Goods</a></li>
+          <li><a href="">View all departments</a></li>                    
+        </ul>
+      </div>
+    </div>
+
+      <div class="footer-links-bx">
+        <h3>More departments</h3>
+                <button aria-expanded="false" class="mob-tbtn"><h3>More departments</h3><i class="fas fa-chevron-down"></i></button>
+        <div class="links-box">
+        <ul>
+          <li><a href="">Fresh Produce</a></li>
+          <li><a href="">Dairy Products</a></li>
+          <li><a href="">Meat</a></li>
+          <li><a href="">Meat Alternatives</a></li>
+          <li><a href="">Seafood</a></li>
+          <li><a href="">Pantry Food</a></li>
+          <li><a href="">Baked Goods</a></li>
+          <li><a href="">View all departments</a></li>                    
+        </ul>
+      </div>
+    </div>
+
+      <div class="footer-links-bx">
+        <h3>Instacart programs</h3>
+         <button aria-expanded="false" class="mob-tbtn"><h3>Instacart programs</h3><i class="fas fa-chevron-down"></i></button>
+       <div class="links-box">
+        <ul>
+          <li><a href="">Fresh Produce</a></li>
+          <li><a href="">Dairy Products</a></li>
+          <li><a href="">Meat</a></li>
+          <li><a href="">Meat Alternatives</a></li>
+          <li><a href="">Seafood</a></li>
+          <li><a href="">Pantry Food</a></li>
+          <li><a href="">Baked Goods</a></li>
+          <li><a href="">View all departments</a></li>                    
+        </ul>
+      </div>
+    </div>
+
+      <div class="footer-links-bx">
+        <h3>Get to know us</h3>
+         <button aria-expanded="false" class="mob-tbtn"><h3>Get to know us</h3><i class="fas fa-chevron-down"></i></button>
+        <div class="links-box">
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Press</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Shop By Location</a></li>                    
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>  
+
+  <div class="common-footer bottom-ftr">
+   <div class="shopers-left-bx">
+    <div class="shopers-left-inner">
+     <p class="get-deliver-para"><img src="images/cart-bag.png" class="img-fluid" width="50px;"><strong>Become a Shopper</strong></p>
+     <ul>
+      <li><a href=""><i class="fab fa-apple"></i> IOS</a></li>
+      <li><a href=""><i class="fab fa-google-play"></i> Android</a></li>
+    </ul>
+  </div>
+</div>
+<div class="shopers-right-bx">
+ <div class="footer-links-bx">
+  <h3>Make money with us</h3>
+  <button aria-expanded="false" class="mob-tbtn"><h3>Make money with us</h3><i class="fas fa-chevron-down"></i></button>
+    <div class="links-box">
+  <ul>
+    <li><a href="">Fresh Produce</a></li>
+    <li><a href="">Dairy Products</a></li>
+    <li><a href="">Meat</a></li>
+    <li><a href="">Meat Alternatives</a></li>
+    <li><a href="">Seafood</a></li>
+    <li><a href="">Pantry Food</a></li>
+    <li><a href="">Baked Goods</a></li>
+    <li><a href="">View all departments</a></li>                    
+  </ul>
+</div>
+</div>
+
+<div class="footer-links-bx">
+  <h3>Top cities</h3>
+  <button aria-expanded="false" class="mob-tbtn"><h3>Top cities</h3><i class="fas fa-chevron-down"></i></button>
+          <div class="links-box">
+  <ul>
+    <li><a href="">Fresh Produce</a></li>
+    <li><a href="">Dairy Products</a></li>
+    <li><a href="">Meat</a></li>
+    <li><a href="">Meat Alternatives</a></li>
+    <li><a href="">Seafood</a></li>
+    <li><a href="">Pantry Food</a></li>
+    <li><a href="">Baked Goods</a></li>
+    <li><a href="">View all departments</a></li>                    
+  </ul>
+</div>
+</div>
+
+<div class="footer-links-bx">
+  <h3>More cities</h3>
+  <button aria-expanded="false" class="mob-tbtn"><h3>More cities</h3><i class="fas fa-chevron-down"></i></button>
+          <div class="links-box">
+  <ul>
+    <li><a href="">Fresh Produce</a></li>
+    <li><a href="">Dairy Products</a></li>
+    <li><a href="">Meat</a></li>
+    <li><a href="">Meat Alternatives</a></li>
+    <li><a href="">Seafood</a></li>
+    <li><a href="">Pantry Food</a></li>
+    <li><a href="">Baked Goods</a></li>
+    <li><a href="">View all departments</a></li>                    
+  </ul>
+</div>
+</div>
+
+<div class="footer-links-bx">
+  <h3>Shopper help</h3>
+   <button aria-expanded="false" class="mob-tbtn"><h3>Shopper help</h3><i class="fas fa-chevron-down"></i></button>
+  <div class="links-box">
+  <ul>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Press</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Help</a></li>
+    <li><a href="">Careers</a></li>
+    <li><a href="">Privacy</a></li>
+    <li><a href="">Terms</a></li>
+    <li><a href="">Shop By Location</a></li>                    
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row legal-info"> 
+ <div class="col-sm-4">
+   <h5>Legal</h5>
+ </div>  
+ <div class="col-sm-4">
+  <ul>
+    <li><a href="">Terms of Use</a></li>
+    <li><a href="">Privacy Policy</a></li>
+  </ul>
+</div> 
+
+<div class="col-sm-4">
+  <div class="social">
+    <a href="#" class="fab fa-facebook-square"></a>
+    <a href="#" class="fab fa-twitter"></a>
+    <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-pinterest"></a>
+  </div>
+</div> 
+
+  <div class="col-sm-12">
+    <p class="btm-para">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </div>
+
+</div>
+</div>
+</footer>
+<!-- footer section End Here -->
+
+
+
+<!-- js start Here -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(".mob-tbtn").click(function(){
+  $(this).next().toggle('slow');
+  $(".mob-tbtn").addClass("active");
+$(this).removeClass("active"); 
+});
+});
+</script>
+
+
 </script>
 
 <script type="text/javascript">
 
+  $(".my-cls").focus(function(){
+   $('.current-lbox').show();
+
+ }).blur(function(){
+  $('.current-lbox').hide();
+})
 </script>
 
+<script>
+  $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+          $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+          $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+          $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+      });
+    </script>
 
-</body>
-</html>
+  </body>
+  </html>
