@@ -1052,6 +1052,13 @@ a.start-shop-btn {
 .links-box {
     display: none;
 }
+.category-list-bx {
+    width: 50%;
+}
+.breadcrumb-inner h2 {
+    color: #fff;
+    padding: 0;
+}
 }
 @media (max-width: 768px) and (max-width: 1023px) {
 .bottom-btns a {
