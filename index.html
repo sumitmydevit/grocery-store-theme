@@ -607,24 +607,10 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $(".mob-tbtn").click(function(){
-      $(this).next().toggle('slow');
-      $(".mob-tbtn").addClass("active");
-      $(this).removeClass("active"); 
+      $(this).next().toggle(300);
+      $(this).toggleClass("active");
     });
   });
-</script>
-
-
-</script>
-
-<script type="text/javascript">
-
-  $(".my-cls").focus(function(){
-   $('.current-lbox').show();
-
- }).blur(function(){
-  $('.current-lbox').hide();
-})
 </script>
 
 <script>

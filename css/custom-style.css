@@ -541,6 +541,9 @@ a.btn.common-btn {
      color: #343538;
      transition: all .2s ease-in-out;
 }
+.footer-links-bx .fas, .box-category > ul > li > a .fas{
+   transition: all .2s ease-in-out;
+}
  .footer-links-bx ul li a:hover {
      color: #47ad2e;
      text-decoration: underline;
@@ -594,7 +597,9 @@ button:focus {
 .links-box.guru {
     display: block !important;
 }
-
+.mob-tbtn.active i.fas {
+    transform: rotate(180deg);
+}
 
 /*****--- Modal Css Start Here ---********/
 .login-signin-modal .modal-title{
@@ -772,15 +777,38 @@ button:focus {
     box-shadow: rgb(0 0 0 / 16%) 0px 6px 8px;
 }
 
-
 /*****####### category page css Start Here ####********/
-
-.breadcrumb-inner h2 {
+.breadcrumb-main {
+    position: relative;
+}
+.breadcrumb-inner:before {
+    content: " ";
+    position: absolute;
+    background-color: #05050545;
+    height: 100%;
+    z-index: 999;
+    width: 100%;
+    opacity: 1;
+    display: block;
+}
+.breadcrumb-inner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.breadcrumb-main h2 {
     padding: 35px;
     font-weight: 600;
-    align-items: center;
-    height: 100%;
-    display: flex;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 999;
+    font-size: 38px;
 }
 .sticky-nav {
     position: -webkit-sticky;
@@ -843,17 +871,6 @@ button:focus {
     align-items: center;
     border-left: 1px solid #47ad2e;
     line-height: 20px;
-}
-.breadcrumb-inner {
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-    width: 100%;
-    background-position: 100% 20%;
-    background-image: linear-gradient(rgb(7 7 7 / 22%), rgb(0 0 0 / 30%)),url(../images/pro-8.jpg);
-    background-color: rgb(222, 237, 214);
-    display: flex;
-    height: 350px;
 }
 .category-list-column {
     display: -webkit-flex;
@@ -944,6 +961,93 @@ button:focus {
 }
 .category-list {
     margin-top: 25px;
+}
+.box-content.box-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+.box-category > ul > li ul {
+    display: none;
+    padding-left: 0px !important;
+    padding-bottom: 15px;
+    padding-right: 0px !important;
+}
+.box-category ul li {
+    position: relative;
+}
+.box-category > ul > li ul > li a {
+    text-decoration: none;
+    margin: 0 0 !important;
+    padding: 0px 12px 0px 10px !important;
+    border-bottom: 0px solid #EAEAEA;
+    color: #7a7a7a;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.box-category > ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    height: 44px;
+}
+.box-category > ul > li > a .fas {
+    font-size: 14px;
+}
+.box-category > ul > li > a.active i.fas {
+    transform: rotate(90deg);
+}
+.search-group {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+}
+.search-group .form-control {
+    min-height: auto;
+    padding: .33em .75em;
+    border: 0;
+    background: transparent;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.search-group .form-control ~ .form-notch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: left;
+    pointer-events: none;
+}
+.search-group .form-control ~ .form-notch div {
+    pointer-events: none;
+    border: 1px solid #bdbdbd;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+}
+.search-group .btn {
+    background-color: #47ad2e;
+    outline: none;
+}
+.box-content.box-category {
+    margin-top: 20px;
 }
 /*****####### Media Start Here ####********/
 
