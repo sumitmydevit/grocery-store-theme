@@ -1049,6 +1049,9 @@ button:focus {
 .box-content.box-category {
     margin-top: 20px;
 }
+.pro-list h5 {
+    margin-top: 15px;
+}
 /*****####### Media Start Here ####********/
 
  @media (min-width: 768px) {
