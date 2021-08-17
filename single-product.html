@@ -12,197 +12,226 @@
   <link as="font" crossorigin="anonymous" href="fonts/eina-regular-962b94746f466cf38b0dcc93ebf0703e.woff2" rel="preload" type="font/woff2" />
   <link as="font" crossorigin="anonymous" href="fonts/eina-semibold-3c45702adeba381bbd0bc600c987febd.woff2" rel="preload" type="font/woff2" />
   <link as="font" crossorigin="anonymous" href="fonts/eina-bold-df33d802f345a9037eb82e0c80e76547.woff2" rel="preload" type="font/woff2" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/css/easyzoom.css" />
+
+  <style>
+  .stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+  }
+  body {
+    background-color: #f9f9fa
+  }
+  .mainimage {
+    width: 100% !important
+  }
+</style>
 
 </head>
 <body>
 
-  <header class="header-sticky header-main">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/"><img src="images/dushicart-logo-N.png" class="img-fluid logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+ <header class="header-sticky header-main">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/"><img src="images/dushicart-logo-N.png" class="img-fluid logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglertopmenu">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Home</a>
-            </li>
-            <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">Shop</a>
-              <div class="dropdown-menu megamenu" role="menu">
-                <ul class="mega-drop-bx">
-                 <li><a href="#">Food</a></li>
-                 <li><a href="#">Pantry</a></li>
-                 <li><a href="#">Sea Foods</a></li>                
-                 <li><a href="#">Baked Goods</a></li>
-                 <li><a href="#">Dairy</a></li>
-                 <li><a href="#">Fresh Produce</a></li>
-                 <li><a href="#">Deli</a></li>  
-                 <li><a href="#">Frozen Foods</a></li>  
-                 <li><a href="#">Meat</a></li>            
-                 <li><a href="#">Meat Alternative</a></li>
-                 <li><a href="#">Beverages</a></li>
-                 <li><a href="#">Alcohol</a></li>
-                 <li><a href="#">Wine</a></li>
-                 <li><a href="#">Liqour</a></li>
-                 <li><a href="#">Beer</a></li>
-                 <li><a href="#">Coffee</a></li>
-                 <li><a href="#">Juice</a></li>
-                 <li><a href="#">Soda</a></li>
-                 <li><a href="#">Tea</a></li>
-                 <li><a href="#">Water</a></li>
-                 <li><a href="#">Organic Grocery</a></li>
-               </ul>
-             </div> <!-- dropdown-mega-menu.// -->
-           </li>
-           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Help</a>
+      <div class="collapse navbar-collapse" id="navbarTogglertopmenu">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Home</a>
           </li>
-        </ul>
+          <li class="nav-item dropdown has-megamenu">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">Shop</a>
+            <div class="dropdown-menu megamenu" role="menu">
+              <ul class="mega-drop-bx">
+               <li><a href="#">Food</a></li>
+               <li><a href="#">Pantry</a></li>
+               <li><a href="#">Sea Foods</a></li>                
+               <li><a href="#">Baked Goods</a></li>
+               <li><a href="#">Dairy</a></li>
+               <li><a href="#">Fresh Produce</a></li>
+               <li><a href="#">Deli</a></li>  
+               <li><a href="#">Frozen Foods</a></li>  
+               <li><a href="#">Meat</a></li>            
+               <li><a href="#">Meat Alternative</a></li>
+               <li><a href="#">Beverages</a></li>
+               <li><a href="#">Alcohol</a></li>
+               <li><a href="#">Wine</a></li>
+               <li><a href="#">Liqour</a></li>
+               <li><a href="#">Beer</a></li>
+               <li><a href="#">Coffee</a></li>
+               <li><a href="#">Juice</a></li>
+               <li><a href="#">Soda</a></li>
+               <li><a href="#">Tea</a></li>
+               <li><a href="#">Water</a></li>
+               <li><a href="#">Organic Grocery</a></li>
+             </ul>
+           </div> <!-- dropdown-mega-menu.// -->
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Help</a>
+        </li>
+      </ul>
 
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link log-in-btn" href="#" data-toggle="modal" data-target="#loginModal">Log in</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link sing-up-btn" data-toggle="modal" data-target="#signupModal" href="#">Sign Up</a>
-          </li>
-        </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link log-in-btn" href="#" data-toggle="modal" data-target="#loginModal">Log in</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link sing-up-btn" data-toggle="modal" data-target="#signupModal" href="#">Sign Up</a>
+        </li>
+      </ul>
 
-      </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
+</div>
 </header>
 <!-- Header End Here --> 
 
-
-<div class="breadcrumb-main">
-  <div class="breadcrumb-inner">
-    <img src="images/Breadcrumb-2.jpg" class="img-fluid">
-      </div> 
-  <div class="common-breadcrumb">
-  <h2>Shop By Department</h2>  
-  <span class="ssc-breadcrumb"><a href="/">Home</a></span><span class="divider"> / </span><span class="ssc-breadcrumb">Shop</span>
+<div class="breadcrumb-main breadcrumb-single-product">
+  <div class="container h-100">
+    <div class="row h-100 position-relative">
+      <div class="col-sm-12">
+        <div class="common-breadcrumb"> 
+          <span class="ssc-breadcrumb"><a href="#">Home</a></span><span class="divider"> / </span><a href="#">Food</a></span><span class="divider"> / </span><span class="ssc-breadcrumb">Bolognese Tofu Souce</span>
+        </div> 
+      </div>
+    </div>
   </div>
 </div><!-- breadcrumb End Here --> 
 
 
-<div id="main-content" class="category-main mt-5 mb-5">
+<div class="single-product-main mt-4 mb-4">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="category-list">
-          <div class="category-list-column">
+   <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="easyzoom easyzoom--overlay"> <a href="images/27.jpg"> <img class="mainimage" src="images/27.jpg" /></a> 
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="category-list-bx">
-              <div class="categories_list_item">
-                <div class="categories_list_image">
-                  <img src="images/cate-1.jpg" alt="Category image">
-                </div>
-                <h5 class="categories_list_title">Alcohol</h5>
-                <a href="/" class="categories_list_link"></a>
-              </div>
-            </div><!-- category-list-bx End Here --> 
+    <div class="col-sm-6"> 
+      <div class="Product-summary">
+       <span class="inventory_status">In Stock</span>
+       <h2>Bolognese Tofu Souce</h2>
+       <p class="price"><span class="amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>59.50</bdi></span></p>
+       <div class="pro-decription">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-            <div class="category-list-bx">
-              <div class="categories_list_item">
-                <div class="categories_list_image">
-                  <img src="images/cate-2.jpg" alt="Category image">
-                </div>
-                <h5 class="categories_list_title">Dainties</h5>
-                <a href="/" class="categories_list_link"></a>
-              </div>
-            </div><!-- category-list-bx End Here --> 
+        <div class="botton-group mt-4">
+          <div class="qtySelector">
+            <i class="fa fa-minus decreaseQty"></i>
+            <input type="text" class="qtyValue" value="1" />
+            <i class="fa fa-plus increaseQty"></i>
+          </div>
+          <button type="submit" name="add-to-cart" value="3881" class="single_add_to_cart_button button">Add to cart</button>
+          <p class="addto-wish"><a href="#"><i class="far fa-heart"></i> Add to Wishlist</a></p>
+        </div>
 
-            <div class="category-list-bx">
-              <div class="categories_list_item">
-                <div class="categories_list_image">
-                  <img src="images/cate-3.jpg" alt="Category image">
-                </div>
-                <h5 class="categories_list_title">Dairy</h5>
-                <a href="/" class="categories_list_link"></a>
-              </div>
-            </div><!-- category-list-bx End Here --> 
-
-            <div class="category-list-bx">
-              <div class="categories_list_item">
-                <div class="categories_list_image">
-                  <img src="images/cate-4.jpg" alt="Category image">
-                </div>
-                <h5 class="categories_list_title">Desserts</h5>
-                <a href="/" class="categories_list_link"></a>
-              </div>
-            </div><!-- category-list-bx End Here --> 
-
-            <div class="category-list-bx">
-              <div class="categories_list_item">
-                <div class="categories_list_image">
-                  <img src="images/cate-5.jpg" alt="Category image">
-                </div>
-                <h5 class="categories_list_title">Fruit</h5>
-                <a href="/" class="categories_list_link"></a>
-              </div>
-            </div><!-- category-list-bx End Here --> 
-
-            <div class="category-list-bx">
-              <div class="categories_list_item">
-                <div class="categories_list_image">
-                  <img src="images/cate-6.jpg" alt="Category image">
-                </div>
-                <h5 class="categories_list_title">Meat</h5>
-                <a href="/" class="categories_list_link"></a>
-              </div>
-            </div><!-- category-list-bx End Here --> 
-
-            <div class="category-list-bx">
-              <div class="categories_list_item">
-                <div class="categories_list_image">
-                 <img src="images/cate-7.jpg" alt="Category image">
-               </div>
-               <h5 class="categories_list_title">Pasta & Sauce</h5>
-               <a href="/" class="categories_list_link"></a>
-             </div>
-           </div><!-- category-list-bx End Here --> 
-
-           <div class="category-list-bx">
-            <div class="categories_list_item">
-              <div class="categories_list_image">
-                <img src="images/cate-8.jpg" alt="Category image">
-              </div>
-              <h5 class="categories_list_title">Seafood</h5>
-              <a href="/" class="categories_list_link"></a>
-            </div>
-          </div><!-- category-list-bx End Here --> 
-
-          <div class="category-list-bx">
-            <div class="categories_list_item">
-              <div class="categories_list_image">
-                <img src="images/cate-9.jpg" alt="Category image">
-              </div>
-              <h5 class="categories_list_title">Tea & Coffee</h5>
-              <a href="/" class="categories_list_link"></a>
-            </div>
-          </div><!-- category-list-bx End Here --> 
-
-          <div class="category-list-bx">
-            <div class="categories_list_item">
-              <div class="categories_list_image">
-                <img src="images/cate-10.jpg" alt="Category image">
-              </div>
-              <h5 class="categories_list_title">Vegetables</h5>
-              <a href="/" class="categories_list_link"></a>
-            </div>
-          </div><!-- category-list-bx End Here -->           
-
+        <div class="product_meta">
+          <span class="sku_wrapper">SKU: <span class="sku">#4343</span></span>
+          <span class="id_wrapper">Category: <a href="#" rel="tag">Souce</a></span>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div><!-- category-main End Here --> 
 
+</div>
+</div>
+</div><!-- breadcrumb End Here --> 
+
+
+<div class="single-product-tabs-desc mt-4 mb-4">
+  <div class="container">
+
+   <div class="row">
+    <div class="col-sm-12">
+     <h2 class="line-title">Description</h2>
+     <div class="desc-layout-boxed">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+     <h2 class="line-title">Reviews</h2>
+    <div class="reviews-inner text-center">
+      <div id="comments">
+        <p class="woocommerce-noreviews">There are no reviews yet.</p>
+        <p class="rev-btn text-center"><a href="">Add a Review</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div><!-- breadcrumb End Here --> 
+
+
+<div class="related-product mt-4 mb-4">
+  <div class="container">
+   <div class="row">
+    <div class="col-sm-12">
+      <h2 class="line-title">Related products</h2>     
+  </div>
+ </div>
+
+   <div class="row">
+    <div class="col-sm-3">
+      <div class="product-box">
+        <a href="#" class="product-link">         
+         <img src="images/prol-1.jpg" class="img-fluid">
+         <h5>Product Title</h5> 
+         <p>$59</p>
+       </a> 
+       <a href="#" class="button add_to_cart_button">Add to cart</a>          
+     </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="product-box">
+        <a href="#" class="product-link">         
+         <img src="images/prol-2.jpg" class="img-fluid">
+         <h5>Product Title</h5> 
+         <p>$59</p>
+       </a> 
+       <a href="#" class="button add_to_cart_button">Add to cart</a>          
+     </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="product-box">
+        <a href="#" class="product-link">         
+         <img src="images/prol-3.jpg" class="img-fluid">
+         <h5>Product Title</h5> 
+         <p>$59</p>
+       </a> 
+       <a href="#" class="button add_to_cart_button">Add to cart</a>          
+     </div>
+    </div>    
+
+    <div class="col-sm-3">
+      <div class="product-box">
+        <a href="#" class="product-link">         
+         <img src="images/prol-4.jpg" class="img-fluid">
+         <h5>Product Title</h5> 
+         <p>$59</p>
+       </a> 
+       <a href="#" class="button add_to_cart_button">Add to cart</a>          
+     </div>
+    </div>
+
+  </div>
+
+</div>
+</div><!-- breadcrumb End Here --> 
 
 <footer class="footer-main mt-4">
   <div class="container">
@@ -489,7 +518,49 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/src/easyzoom.js"></script>
 
+<style type="text/css">
+body {
+  background-color: #f9f9fa
+}
+
+</style>
+<script type='text/javascript'>
+  $(document).ready(function() {
+    var $easyzoom = $('.easyzoom').easyZoom();
+  });
+</script>
+
+<script type="text/javascript">
+  var minVal = 1, maxVal = 20; // Set Max and Min values
+// Increase product quantity on cart page
+$(".increaseQty").on('click', function(){
+  var $parentElm = $(this).parents(".qtySelector");
+  $(this).addClass("clicked");
+  setTimeout(function(){
+    $(".clicked").removeClass("clicked");
+  },100);
+  var value = $parentElm.find(".qtyValue").val();
+  if (value < maxVal) {
+    value++;
+  }
+  $parentElm.find(".qtyValue").val(value);
+});
+// Decrease product quantity on cart page
+$(".decreaseQty").on('click', function(){
+  var $parentElm = $(this).parents(".qtySelector");
+  $(this).addClass("clicked");
+  setTimeout(function(){
+    $(".clicked").removeClass("clicked");
+  },100);
+  var value = $parentElm.find(".qtyValue").val();
+  if (value > 1) {
+    value--;
+  }
+  $parentElm.find(".qtyValue").val(value);
+});
+</script>
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -497,10 +568,8 @@
       $(this).next().toggle(300);
       $(this).toggleClass("active");
     });
+
   });
 </script>
-
-
-
 </body>
-</html>
+</html> 
