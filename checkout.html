@@ -13,8 +13,7 @@
   <link as="font" crossorigin="anonymous" href="fonts/eina-semibold-3c45702adeba381bbd0bc600c987febd.woff2" rel="preload" type="font/woff2" />
   <link as="font" crossorigin="anonymous" href="fonts/eina-bold-df33d802f345a9037eb82e0c80e76547.woff2" rel="preload" type="font/woff2" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/css/easyzoom.css" />
- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+
 
 </head>
 <body>
@@ -85,7 +84,7 @@
     <div class="row h-100 position-relative">
       <div class="col-sm-12">
         <div class="common-breadcrumb"> 
-          <span class="ssc-breadcrumb"><a href="#">Home</a></span><span class="divider"> / </span><a href="#">Food</a></span><span class="divider"> / </span><span class="ssc-breadcrumb">Bolognese Tofu Souce</span>
+          <span class="ssc-breadcrumb"><a href="#">Home</a></span><span class="divider"> / </span><span class="ssc-breadcrumb">Checkout</span>
         </div> 
       </div>
     </div>
@@ -93,158 +92,210 @@
 </div><!-- breadcrumb End Here --> 
 
 
-<div class="single-product-main mb-4">
+<div class="checkout-main mb-4">
   <div class="container">
-   <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="easyzoom easyzoom--overlay"> <a href="images/27.jpg"> <img class="mainimage" src="images/27.jpg" /></a> 
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6"> 
-      <div class="Product-summary">
-       <span class="inventory_status">In Stock</span>
-       <h2>Bolognese Tofu Souce</h2>
-       <p class="price"><span class="amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>59.50</bdi></span></p>
-       <div class="pro-decription">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-        <div class="botton-group mt-4">
-          <div class="qtySelector">
-            <i class="fa fa-minus decreaseQty"></i>
-            <input type="text" class="qtyValue" value="1" />
-            <i class="fa fa-plus increaseQty"></i>
-          </div>
-          <button type="submit" name="add-to-cart" value="" class="single_add_to_cart_button button">Add to cart</button>
-          <p class="addto-wish"><a href="#"><i class="far fa-heart"></i> Add to Wishlist</a></p>
-        </div>
-
-        <div class="product_meta">
-          <span class="sku_wrapper">SKU: <span class="sku">#4343</span></span>
-          <span class="id_wrapper">Category: <a href="#" rel="tag">Souce</a></span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
-</div><!-- breadcrumb End Here --> 
-
-
-<div class="single-product-tabs-desc mt-4 mb-4">
-  <div class="container">
-
-   <div class="row">
-    <div class="col-sm-12">
-     <h2 class="line-title">Description</h2>
-     <div class="desc-layout-boxed">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-    </div>
-  </div>
-</div>
-
 <div class="row">
-  <div class="col-sm-12">
-     <h2 class="line-title">Reviews</h2>
-    <div class="reviews-inner text-center">
-      <div id="comments">
-        <p class="noreviews">There are no reviews yet.</p>
-        <p class="rev-btn text-center"><a href="">Add a Review</a></p>
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">-$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+
+       <!--  <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form> -->
+
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Billing address</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Country</label>
+                <select class="custom-select d-block w-100" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">State</label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Save this information for next time</label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                <label class="custom-control-label" for="credit">Credit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="debit">Debit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="paypal">Paypal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-
-</div>
-</div><!-- breadcrumb End Here --> 
-
-
-<div class="related-product mt-4 mb-4">
-  <div class="container">
-
-   <div class="row">
-    <div class="col-sm-12">
-      <h2 class="line-title">Related products</h2>     
-  </div>
  </div>
+</div><!-- checkout-main End Here --> 
 
-    <section class="related-product-sl slider">
-    <div>
-      <div class="product-box">
-        <a href="#" class="product-link">         
-         <img src="images/prol-1.jpg" class="img-fluid">
-         <h5>Product Title</h5> 
-         <p>$37.00</p>
-       </a> 
-       <a href="#" class="button add_to_cart_button">Add to cart</a>          
-     </div>
-    </div>
-
-    <div>
-      <div class="product-box">
-        <a href="#" class="product-link">         
-         <img src="images/prol-2.jpg" class="img-fluid">
-         <h5>Product Title</h5> 
-         <p>$59.00</p>
-       </a> 
-       <a href="#" class="button add_to_cart_button">Add to cart</a>          
-     </div>
-    </div>
-
-    <div>
-      <div class="product-box">
-        <a href="#" class="product-link">         
-         <img src="images/prol-3.jpg" class="img-fluid">
-         <h5>Product Title</h5> 
-         <p>$78.00</p>
-       </a> 
-       <a href="#" class="button add_to_cart_button">Add to cart</a>          
-     </div>
-    </div>    
-
-    <div>
-      <div class="product-box">
-        <a href="#" class="product-link">         
-         <img src="images/prol-4.jpg" class="img-fluid">
-         <h5>Product Title</h5> 
-         <p>$67.00</p>
-       </a> 
-       <a href="#" class="button add_to_cart_button">Add to cart</a>          
-     </div>
-    </div>
-
-    <div>
-      <div class="product-box">
-        <a href="#" class="product-link">         
-         <img src="images/prol-1.jpg" class="img-fluid">
-         <h5>Product Title</h5> 
-         <p>$49.00</p>
-       </a> 
-       <a href="#" class="button add_to_cart_button">Add to cart</a>          
-     </div>
-    </div>
-
-    <div>
-      <div class="product-box">
-        <a href="#" class="product-link">         
-         <img src="images/prol-2.jpg" class="img-fluid">
-         <h5>Product Title</h5> 
-         <p>$99.00</p>
-       </a> 
-       <a href="#" class="button add_to_cart_button">Add to cart</a>          
-     </div>
-    </div>    
-
-</section>
-
-
-</div>
-</div><!-- breadcrumb End Here --> 
 
 <footer class="footer-main mt-4">
   <div class="container">
@@ -526,57 +577,13 @@
 </div>
 
 
-
 <!-- js start Here -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/src/easyzoom.js"></script>
-<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 
-  <script type="text/javascript">
-      $(document).ready(function() {
-      $(".related-product-sl").slick({
-        arrows: true,
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
-});
-</script>
-
-<script type='text/javascript'>
-  $(document).ready(function() {
-    var $easyzoom = $('.easyzoom').easyZoom();
-  });
-</script>
 
 <script type="text/javascript">
   var minVal = 1, maxVal = 20; // Set Max and Min values

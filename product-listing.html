@@ -91,7 +91,7 @@
 <div id="main-content" class="product-listing-main mt-5 mb-5">
   <div class="container">
     <div class="row">
-     <div class="col-sm-3">
+     <div class="col-sm-4 col-md-3">
       <div class="side-nav-categories">
         <div class="search-group">
           <div class="form-outline">
@@ -187,9 +187,9 @@
       </div>
     </div>
 
-    <div class="col-sm-9 pro-list"> 
+    <div class="col-sm-8 col-md-9 pro-list"> 
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-md-4">
           <div class="product-box"> 
             <a href="#" class="product-link">
              <img src="images/prol-1.jpg" class="img-fluid">
@@ -200,7 +200,7 @@
          </div>
        </div>
 
-       <div class="col-sm-4"> 
+       <div class="col-sm-6 col-md-4"> 
         <div class="product-box">
           <a href="#" class="product-link">
            <img src="images/prol-2.jpg" class="img-fluid">
@@ -211,7 +211,7 @@
        </div>
      </div>
 
-     <div class="col-sm-4">
+     <div class="col-sm-6 col-md-4">
       <div class="product-box">
         <a href="#" class="product-link">         
          <img src="images/prol-3.jpg" class="img-fluid">
@@ -222,7 +222,7 @@
      </div>
    </div>
 
-   <div class="col-sm-4">
+   <div class="col-sm-6 col-md-4">
     <div class="product-box"> 
       <a href="#" class="product-link">        
        <img src="images/prol-4.jpg" class="img-fluid">
@@ -233,7 +233,7 @@
    </div>
  </div>
 
- <div class="col-sm-4">
+ <div class="col-sm-6 col-md-4">
   <div class="product-box">  
     <a href="#" class="product-link">      
      <img src="images/prol-5.jpg" class="img-fluid">
@@ -244,17 +244,17 @@
  </div>
 </div>
 
-<div class="col-sm-4">
-<div class="product-box"> 
- <a href="#" class="product-link"> 
-   <img src="images/prol-6.jpg" class="img-fluid">
-   <h5>Product Title</h5> 
-   <p>$59</p>
- </a>  
- <a href="#" class="button add_to_cart_button">Add to cart</a>        
+<div class="col-sm-6 col-md-4">
+  <div class="product-box"> 
+   <a href="#" class="product-link"> 
+     <img src="images/prol-6.jpg" class="img-fluid">
+     <h5>Product Title</h5> 
+     <p>$59</p>
+   </a>  
+   <a href="#" class="button add_to_cart_button">Add to cart</a>        
+ </div>
 </div>
-</div>
-     
+
 </div>
 </div>
 
@@ -558,9 +558,15 @@
     });
 
     $(".cat").click(function(){
+      event.preventDefault()          
+      if($(this).hasClass('active')){     
+        $(this).toggleClass("active");
+      //$('.cat').toggleClass("active");
+    }else{
       $('.cat').removeClass("active");
-      $(this).addClass("active");      
-    });
+      $(this).addClass("active");
+    }      
+  });
 
   });
 </script>
